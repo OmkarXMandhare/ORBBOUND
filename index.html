@@ -1,0 +1,63 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ORBBOUND | Orb Adventure</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="game-wrapper">
+
+        <header class="top-bar">
+            <div class="logo">ORB<span>BOUND</span></div>
+            <div class="level-label">WORLD 01 <span>/</span> AWAKENING</div>
+        </header>
+
+        <section class="game-container">
+
+            <canvas id="gameCanvas" width="960" height="540">
+                Your browser does not support HTML Canvas.
+            </canvas>
+
+            <div class="game-overlay" id="gameOverlay">
+
+                <div class="menu-content">
+                    <p class="eyebrow">A NEW ADVENTURE BEGINS</p>
+
+                    <h1>ORB<span>BOUND</span></h1>
+
+                    <p class="subtitle">
+                        Roll beyond the unknown.
+                    </p>
+
+                    <button id="startButton" class="start-button">
+                        START ADVENTURE <span>→</span>
+                    </button>
+
+                    <p class="controls-hint">
+                        MOVE: A / D or ← / → &nbsp; • &nbsp; JUMP: SPACE
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer class="game-footer">
+            <div>ENERGY RINGS <strong id="ringCount">0 / 5</strong></div>
+            <div>FORM <strong id="ballForm">NORMAL ORB</strong></div>
+            <div>STATUS <strong id="gameStatus">READY</strong></div>
+        </footer>
+
+    </main>
+
+    <script src="game.js"></script>
+
+</body>
+</html>
+```
